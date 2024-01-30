@@ -5,7 +5,18 @@ body{
 
 @font-face {
     font-family: Akira ;
-    src: url(../../Akira\ Expanded\ Demo.otf);
+    src: url(../../Fonts/Akira\ Expanded\ Demo.otf);
+}
+
+@font-face {
+    font-family: BeaufortFortLol;
+    src: url(../../Fonts\BeaufortForLoL-OTF\BeaufortforLOL-Regular.otf);
+}
+
+@font-face {
+    font-family: BeaufortFortLol;
+    src: url(../../Fonts/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf);
+    font-weight: bold;
 }
 
 
@@ -19,7 +30,8 @@ body{
     border-radius: 3px;
     text-decoration: none;
     color: white;
-    font-family: Akira;
+    font-family: BeaufortFortLol;
+    font-weight: bold;
 }
 
 .container{
@@ -29,19 +41,22 @@ body{
 
 .container h1{
     margin-bottom: 5%;
-    font-family: Akira;
+    font-family: BeaufortFortLol;
+    font-weight: bold;
 }
 
 .container h2{
     margin-bottom: 10%;
-    font-family: Akira;
+    font-family: BeaufortFortLol;
+    font-weight: bold;
 
 }
 
 form{
     margin-top: 5%;
     margin-bottom: 10%;
-    font-family: Akira;
+    font-family: BeaufortFortLol;
+    font-weight: bold;
 }
 
 .formrow{

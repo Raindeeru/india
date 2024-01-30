@@ -4,8 +4,21 @@ body{
 
 @font-face {
     font-family: Akira ;
-    src: url(../Akira\ Expanded\ Demo.otf);
+    src: url(../Fonts/Akira\ Expanded\ Demo.otf);
 }
+
+@font-face {
+    font-family: BeaufortFortLol;
+    src: url(../Fonts\BeaufortForLoL-OTF\BeaufortforLOL-Regular.otf);
+}
+
+@font-face {
+    font-family: BeaufortFortLol;
+    src: url(../Fonts/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf);
+    font-weight: bold;
+}
+
+
 .fade{
     animation-name: fade !important;
     animation-duration: 1.5s !important;
@@ -23,9 +36,9 @@ body{
     right: 0;
     text-align: center;
     font-size: 8vw;
-    font-weight: bold;
     color: white;
-    font-family: Akira;
+    font-family: BeaufortFortLol;
+    font-weight: bold;
 }
 
 .carousel-inner{
@@ -57,11 +70,14 @@ body{
 
 .merch{
     color: white;
-    font-family: Akira;
+    font-family: BeaufortFortLol;
+    font-weight: bold;
 }
 
 .h3{
     margin-top: 10%;
+    font-family: BeaufortFortLol;
+    font-weight: bold;
 }
 
 p{

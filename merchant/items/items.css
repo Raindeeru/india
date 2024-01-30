@@ -1,0 +1,56 @@
+body{
+    background-color: #141414;
+    color: white;
+}
+
+@font-face {
+    font-family: Akira ;
+    src: url(../../Akira\ Expanded\ Demo.otf);
+}
+
+
+.back{
+    margin: 3% 0% 2% 0%;
+}
+
+.back a{
+    padding: 1%;
+    border: solid rgb(255, 255, 255);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-family: Akira;
+}
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container h1{
+    margin-bottom: 5%;
+    font-family: Akira;
+}
+
+.container h2{
+    margin-bottom: 10%;
+    font-family: Akira;
+
+}
+
+form{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: Akira;
+}
+
+.formrow{
+    margin: 2%;
+}
+
+input[type=submit]{
+    border: solid white;
+    background-color: #00000000;
+    padding: 10px 32px;
+    color: white;
+}

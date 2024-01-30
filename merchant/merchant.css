@@ -8,12 +8,12 @@ body{
 }
 
 @font-face {
-    font-family: BeaufortFortLol;
+    font-family: BeaufortForLol;
     src: url(../Fonts\BeaufortForLoL-OTF\BeaufortforLOL-Regular.otf);
 }
 
 @font-face {
-    font-family: BeaufortFortLol;
+    font-family: BeaufortForLol;
     src: url(../Fonts/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf);
     font-weight: bold;
 }
@@ -37,7 +37,7 @@ body{
     text-align: center;
     font-size: 8vw;
     color: white;
-    font-family: BeaufortFortLol;
+    font-family: BeaufortForLol;
     font-weight: bold;
 }
 
@@ -70,13 +70,13 @@ body{
 
 .merch{
     color: white;
-    font-family: BeaufortFortLol;
+    font-family: BeaufortForLol;
     font-weight: bold;
 }
 
 .h3{
     margin-top: 10%;
-    font-family: BeaufortFortLol;
+    font-family: BeaufortForLol;
     font-weight: bold;
 }
 

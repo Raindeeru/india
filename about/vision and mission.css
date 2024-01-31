@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Spigielt;
+    src: url(Fonts_Package/Spiegel-OTF/Spiegel-SemiBold.otf);
+}
+@font-face {
+    font-family: Lolfont;
+    src: url(Fonts_Package/BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.video_background{
+    z-index: -5;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: auto;
+}
+.container{
+    background-color: rgb(215, 215, 215);
+    width: 1250px;
+    height: auto;
+    margin: auto;
+    border: 3px;    
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding: 30px;
+}
+.body{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+   
+}
+.body h1{
+    margin-bottom: 25px;
+    font-family: Spigielt;
+}
+.body p{
+    font-size: 18px;
+    margin-bottom: 50px;
+    line-height: 28px;
+}
+table {
+    width: 1200px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+    margin: auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    
+}
+th{
+    font-size: 22px;
+    font-family: Spigielt;
+}
+td{
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+}

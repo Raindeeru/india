@@ -105,11 +105,13 @@ h4, h5, h6 {
 
 #video-background {
     position: fixed;
-    top: 70px; /* Adjust this value to match the height of your navigation bar */
+    z-index: -1;
+    top: 0; /* Adjust this value to match the height of your navigation bar */
     left: 0;
     width: 100%;
-    height: calc(100% - 70px); /* Adjust this value to fill the remaining height */
+    height: 100%; /* Adjust this value to fill the remaining height */
     object-fit: cover;
+
 }
 
 .hero-section {

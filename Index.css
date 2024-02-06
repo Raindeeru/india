@@ -5,7 +5,7 @@ body{
 }
 @font-face {
     font-family: "Lolfont";
-    src: url(BeaufortForLoL-TTF/BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf);
+    src: url(/Fonts/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf);
 }
 
 @keyframes slide-up {
@@ -84,6 +84,7 @@ body{
   overflow: hidden;
   background-color: rgb(109, 9, 9);
   background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgba(124, 0, 0, 0.774));
+  font-family: "Lolfont";
 }
 
 .topnav a {

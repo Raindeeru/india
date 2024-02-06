@@ -289,6 +289,7 @@ table td:hover p{
     border-top: 3px;
     border-top-color: black;
     border-top-style: solid;
+    display: flex;
 }
 .footer{
     width: 300px;

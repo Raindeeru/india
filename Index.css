@@ -278,22 +278,4 @@ table td:hover p{
     width: 50px;
 }
 
- ul li ul.dropdown li a{
-    display: block;
-    padding: 15px 25px;
-    text-align: center;
-}
-ul li ul.dropdown li{
-    display: block;
-}
-ul li ul.dropdown { 
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-ul li a:hover{
-    background: black;
-}
-ul li:hover ul.dropdown{
-    display: block;
-}
+

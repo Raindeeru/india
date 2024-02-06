@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Lolfont";
+    src: url(Lolfont.ttf);
+}
+
 body {
     font-family: 'Lolfont', sans-serif;
     margin: 0;

@@ -38,6 +38,16 @@
       </div> 
       <a href="javascript:void(0);" style="font-size:30px; margin-top: 1%;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
     
     <div class="main_part">
             <h1 class="background1_header">
@@ -156,15 +166,5 @@
         </div>
         <h3>Mapua Game Consensus</h3>
     </div>
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
 </body>
 </html>

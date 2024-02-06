@@ -1,0 +1,83 @@
+
+.navigation {
+    width: 1600px;
+    height: 80px;
+    margin: -8px;
+    z-index: 3;
+    position: fixed;
+    background-color: rgb(109, 9, 9);
+    background-image: linear-gradient(rgb(156, 152, 152), rgb(0, 0, 0), rgba(124, 0, 0, 0.774));
+    z-index: 9999;
+}
+.navigation_link{
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 410px;
+    font-family: Lolfont;
+    font-weight: lighter;
+}
+.logo1 {
+    width: 55px;
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    list-style-type: none;
+}
+
+.dropdownmenu ul, .dropdownmenu li{
+    width: 1519px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    text-align: center;
+}
+.dropdownmenu ul{
+    list-style: none;
+}
+.dropdownmenu li{
+    padding-right: 50px;
+    float: left;
+    position: relative;
+    width: auto;
+}
+.dropdownmenu a{
+    color: white;
+    display: block;
+    font-weight: lighter;
+    font-size: 15px;
+    font-family: Lolfont;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.dropdownmenu li:hover a{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#submenu{
+    background-color: rgba(255, 255, 255, 0.799);
+    visibility: hidden;
+}
+li:hover ul#submenu{
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    visibility: visible;
+    z-index: 2;
+}
+
+@font-face {
+    font-family: 'Lolfont'; /* Specify a name for your font */
+    src: url('C:/Users/Agnes/OneDrive - Mapúa University/COLLEGE/2nd term/ITS/by group/Lolfont.ttf') format('truetype'); /* Adjust the path and format accordingly */
+    /* Add more src lines for different formats if needed (e.g., woff, ttf, otf) */
+  }
+  
+  body {
+    font-family: 'Lolfont', sans-serif; /* Fallback font in case Lolfont fails to load */
+  }

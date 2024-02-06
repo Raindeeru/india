@@ -74,8 +74,8 @@ li:hover ul#submenu{
 
 @font-face {
     font-family: 'Lolfont'; /* Specify a name for your font */
-    src: url('C:/Users/Agnes/OneDrive - Mapúa University/COLLEGE/2nd term/ITS/by group/Lolfont.ttf') format('truetype'); /* Adjust the path and format accordingly */
-    /* Add more src lines for different formats if needed (e.g., woff, ttf, otf) */
+    src: url('Lolfont.ttf') format('truetype'); /* Adjust the path and format accordingly */
+
   }
   
   body {

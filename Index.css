@@ -5,7 +5,7 @@ body{
 }
 @font-face {
     font-family: "Lolfont";
-    src: url(Lolfont.ttf);
+    src: url(BeaufortForLoL-TTF/BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf);
 }
 
 @keyframes slide-up {

@@ -282,7 +282,7 @@ table td:hover p{
 .footer_container{
     width: 100%;
     height: 200px;
-    background-color: rgba(255, 17, 0, 0.858);
+    background-color: #030000;
     position: absolute;
     top: 2200px;
     margin: -8px;

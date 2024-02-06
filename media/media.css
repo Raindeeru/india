@@ -193,105 +193,6 @@
     animation-name: fade;
     animation-duration: 1.5s;
   }
-
-  .navigation {
-    width: 100%;
-    height: 80px;
-    margin-top: -18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(109, 9, 9);
-    background-image: linear-gradient(rgb(156, 152, 152), rgb(0, 0, 0), rgba(124, 0, 0, 0.774));
-  }
-  .navigation_link{
-    color: white;
-    padding-top: 5px;
-    padding-left: 410px;
-    font-family: 'Lolfont';
-    font-weight: lighter;
-  }
-  .logo1 {
-    width: 55px;
-    position: absolute;
-    top: 5px;
-    left: 35px;
-    list-style-type: none;
-  }
-  
-  .dropdownmenu ul, .dropdownmenu li{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 5px;
-    left: 200px;
-    text-align: center;
-  }
-  
-  .dropdownmenu ul{
-    list-style: none;
-  }
-
-  .dropdownmenu li{
-    padding-right: 50px;
-    float: left;
-    position: relative;
-    width: auto;
-  }
-
-  .dropdownmenu a{
-    color: white;
-    display: block;
-    font-weight: lighter;
-    font-size: 0.9vw;
-    font-family: 'Lolfont';
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    transition: all .5s ease-in-out;
-  }
-  
-  .dropdownmenu li:hover a{
-    background-color: rgb(255, 255, 255);
-    color: black;
-  }
-  
-  #submenu {
-    background-color: rgba(255, 255, 255, 0.799);
-    visibility: hidden;
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%; 
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 2;
-}
-
-li:hover ul#submenu {
-    border-bottom: 3px;
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    visibility: visible;
-    z-index: 2;
-}
-
-
-  .hamburger-icon {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    z-index: 2;
-}
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-}
   
   @font-face {
     font-family: "Lolfont";
@@ -302,64 +203,109 @@ li:hover ul#submenu {
     from {opacity: .4} 
     to {opacity: 1}
   }
-  
-  @media only screen and (max-width: 320px) {
-    .prev,
-    .next,
-    .text {
-      font-size: 11px;
-    }
 
-    .dropdownmenu a {
-      font-size: 0.8vw;
-    }
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(109, 9, 9);
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgba(124, 0, 0, 0.774));
   }
   
-  @media screen and (min-width: 361px) and (max-width: 768px) {
-    .leftcolumn,
-    .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 20px;
   
-    .navigation_link {
+  }
+  
+  .active1 {
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: rgb(126, 125, 125);
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
-  }
-
-  .hamburger-icon {
+    }
+    .topnav a.icon {
+      float: right;
       display: block;
-  }
-
-  .main_menu {
-      width: 100%;
-      text-align: center;
-  }
-
-  .dropdownmenu {
-      display: none;
-      position: absolute;
-      top: 80px;
-      transform: translateX(-75%);
-      width: 50%;
-  }
-
-  .dropdownmenu ul {
-      width: 100%;
-  }
-
-  .dropdownmenu li {
-      float: none;
-      position: relative;
-      width: 100%;
+    }
   }
   
-  .dropdownmenu a {
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
       width: 100%;
-  }
-}
-  @media screen and (min-width: 769px) {
-
-    .navigation_link {
-      font-size: 1.3vw;
+      text-align: left;
     }
   }

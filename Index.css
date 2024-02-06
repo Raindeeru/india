@@ -294,4 +294,5 @@ table td:hover p{
 .footer{
     width: 300px;
     float: left;
+    align-content: center;
 }

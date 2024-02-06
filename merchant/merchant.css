@@ -203,9 +203,3 @@ p{
     from{opacity: .4}
     to{opacity: 1}
 }
-
-footer{
-    background-color: black;
-    height: 200px;
-    color: white;
-}

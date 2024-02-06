@@ -291,8 +291,3 @@ table td:hover p{
     border-top-style: solid;
     display: flex;
 }
-.footer{
-    width: 300px;
-    float: left;
-    align-items: center;
-}

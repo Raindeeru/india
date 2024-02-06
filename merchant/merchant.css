@@ -2,6 +2,14 @@ body{
     background-color: #141414;
 }
 
+.vbg{
+    position: absolute;
+    z-index: -1;
+    height: 120%;
+    width: 100%;
+    top: 60%;
+}
+
 @font-face {
     font-family: Akira ;
     src: url(../Fonts/Akira\ Expanded\ Demo.otf);

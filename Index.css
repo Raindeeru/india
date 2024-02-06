@@ -285,7 +285,7 @@ table td:hover p{
     background-color: rgba(255, 17, 0, 0.858);
     position: absolute;
     top: 2200px;
-    margin-left: -8px;
+    margin: -8px;
     border-top: 3px;
     border-top-color: black;
     border-top-style: solid;

@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="media.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -12,39 +13,33 @@
   <source src="mgc.mp4" type="video/mp4">
 </video>
 
-  <div class="navigation">
-    <img class="logo1" src="icons/mgc-logo.svg">
-    <a style="position: absolute; top: 20px;left: 100px; width: 250px; height: 30px; text-align:left; border-right: 2px; border-right-style: solid; border-right-color: white; font-size: 20px;">Mapua Game Consensus</a>
-    <p class="navigation_link">
-        <nav class="dropdownmenu">
-            <ul>
-                <li><a href="/mgcsite" class="main_menu">Announcements</a>
-                  <ul id="submenu" style="width: 100%; height: 200px;">
-                    <b></b>
-                    </ul>
-                </li>
-                <li><a href="/mgcsite/media/media.html"  class="main_menu">Media</a> 
-                  <ul id="submenu" style="width: 100%; height: 200px;">
-                    </ul>
-                </li>
-                <li><a href="/mgcsite/merchant/merchant.html"  class="main_menu">Merchant </a>
-                  <ul id="submenu" style="width: 100%; height: 200px;">
-                    </ul>
-                </li>
-                <li><a href="/mgcsite/partnerships/partnerships.html"  class="main_menu">Partnerships</a> 
-                  <ul id="submenu" style="width: 100%; height: 200px;">
-                    </ul>
-                </li>
-                <li><a href="/mgcsite/about/about.html"  class="main_menu" style="position: relative; width: 100%;">About us</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-      </div>
-    </p>
+<div class="topnav" id="myTopnav" style="padding-top: 1%;padding-bottom: 1%;">
+    
+  <a href="#home" class="active1">
+    <img src="icons/mgc-logo.svg" alt="" style="float: left; width: 50px; margin: -5px;"><h1 style="margin: 25px;width: 100%; font-size: 20px; font-weight: bold; margin-top: 10px;margin-bottom: 0; text-align: left; padding-right: 100px;">Mapua Game Consensus</h1></a>
+  <a href="#news" style="margin-top: 10px;">Announcement</a>
+  <a href="#about" style="margin-top: 10px;">Media</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="margin-top: 10px;">Merchant
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">T-shirts</a>
+      <a href="#">Journals</a>
+      <a href="#">Keychains</a>
+    </div>
+  </div> 
+  <a href="#about" style="margin-top: 10px;">Partnerships</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="margin-top: 10px;">About us 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Vision and Mission</a>
+      <a href="#">Officers</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:30px; margin-top: 1%;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <div class="row">
@@ -324,14 +319,13 @@ document.getElementById("myModal").addEventListener("hidden.bs.modal", function 
   }
   </script>
 <script>
-  function toggleMenu() {
-    var dropdownMenu = document.querySelector('.dropdownmenu');
-    
-    if (dropdownMenu.style.display === 'block') {
-        dropdownMenu.style.display = 'none';
-    } else {
-        dropdownMenu.style.display = 'block';
-    }
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 </body>

@@ -279,6 +279,23 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .footer_container{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(109, 9, 9);
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgba(124, 0, 0, 0.774));
+    position: absolute;
+    border-top: 2px;
+    margin-top: 10px;
+    margin-left: -20px;
+    border-top-color: red;
+    border-top-style: solid;
+}
+.footer ul{
+    list-style: none;
+    margin-left: -40px;
+}
   
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -290,7 +307,7 @@
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 601px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
@@ -308,5 +325,9 @@
       display: block;
       width: 100%;
       text-align: left;
+    }
+
+    .footer {
+      font-size: smaller;
     }
   }
